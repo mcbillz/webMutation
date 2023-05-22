@@ -6,8 +6,6 @@ const Nmessage = document.getElementById("message");
 const submit = document.getElementById("contactForm");
 
 submit.addEventListener("submit", (e) => {
-  e.preventDefault();
-
   let dBody = `
   <b>Name: </b>${Nname.value}
   <br>
