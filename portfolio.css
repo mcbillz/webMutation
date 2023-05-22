@@ -1,0 +1,359 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+}
+.slide-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.anim {
+  text-decoration: none;
+  color: black;
+  font-size: small;
+  margin-right: 70px;
+  display: inline-block;
+  line-height: 2;
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.anim:after {
+  content: "";
+  display: block;
+  background: #000;
+  width: 100%;
+  height: 5px;
+  margin: 0 auto;
+  transition: all 0.4s ease;
+}
+
+.anim:hover:after {
+  transform: translate(0, -82px);
+  width: 100%;
+  height: 20px;
+  opacity: 0;
+}
+
+.anim:hover {
+  color: gray;
+}
+.section1 {
+  height: 600px;
+  padding-top: 20px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-position-x: 100px;
+  font-family: "Roboto Flex", sans-serif;
+}
+nav {
+  background-color: white;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 70px;
+}
+.container button {
+  color: white;
+  background-color: black;
+  padding: 15px 30px;
+}
+.container button:hover {
+  color: black;
+  background-color: white;
+  border-color: black;
+  border-style: solid;
+}
+.heroImg {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.heroImg img {
+  width: 60%;
+}
+.heroImg p {
+  margin: 20px 0;
+}
+.nav-menu a {
+}
+.quote {
+  display: flex;
+  justify-content: flex-end;
+  padding: 70px 70px 0 0;
+}
+.section2 {
+  height: fit-content;
+  width: 90%;
+  margin: 0 auto;
+  background-color: black;
+  padding-bottom: 50px;
+}
+.sec2H1 {
+  font-family: "Kaushan Script", cursive;
+  color: white;
+  text-align: center;
+  padding: 50px 0 0;
+  font-size: 4rem;
+}
+.sec2P {
+  font-family: "Roboto Flex", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 20px 20%;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  padding: 20px 50px;
+  gap: 20px;
+}
+.skills img {
+  width: 100px;
+}
+.skills img:nth-child(5) {
+  background-color: white;
+}
+.section3 {
+  padding: 50px 0;
+}
+.sec3H1 {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: lighter;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.projectSlides {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 50px;
+}
+.slide1 {
+  width: 300px;
+}
+.slide1 img {
+  width: 100%;
+}
+
+.footer {
+  height: fit-content;
+  background-color: black;
+  margin: 50px 0 0;
+  color: white;
+}
+.ftLogo {
+  padding: 30px;
+}
+.ftLogo img {
+  width: 180px;
+}
+.ft2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+}
+.ft2 h1 {
+  font-size: 20px;
+}
+.view-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  margin: 20px 0;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: none;
+  color: white;
+}
+.view-btn:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.view-btn:hover {
+  background: white;
+  color: black;
+}
+.view-btn:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.view-btn:active {
+  top: 2px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+}
+label {
+  font-size: 14px;
+  padding: 3px;
+}
+form input,
+textarea {
+  color: #fff;
+  font-size: 14px;
+  padding: 2px;
+  background-color: transparent;
+  border-bottom: #fff;
+  border-style: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+textarea {
+  height: 50px;
+}
+.view-btnf {
+  width: 150px;
+  height: 40px;
+  color: black;
+  margin: 40px 0;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: none;
+  color: black;
+}
+.view-btnf:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.view-btnf:hover {
+  background: black;
+  color: white;
+}
+.view-btnf:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.view-btnf:active {
+  top: 2px;
+}
+.socials {
+  width: 15px;
+}
+.socialDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+@media (max-width: 1100px) {
+  .container {
+    padding: 10px 35px;
+  }
+  .container button {
+    padding: 7px 15px;
+    font-size: x-small;
+  }
+  .section1 {
+    height: fit-content;
+    padding-bottom: 50%;
+  }
+  .heroImg img {
+    width: 80%;
+    margin-top: 30%;
+  }
+  .anim {
+    font-size: x-small;
+    margin-right: 35px;
+  }
+  .heroImg p {
+    margin: 20px 0;
+    font-size: xx-small;
+  }
+  .quote {
+    display: flex;
+    justify-content: flex-end;
+    padding: 70px 20px 0 0;
+  }
+  .quote p {
+    font-size: xx-small;
+  }
+  .sec2H1 {
+    font-size: 2rem;
+  }
+  .sec2P {
+    font-size: xx-small;
+    padding: 20px 5%;
+  }
+
+  .projectSlides {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .slide {
+    margin: 20px 0;
+  }
+  .sec3H1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .footer {
+    height: fit-content;
+    background-color: black;
+    margin-bottom: 20px;
+  }
+  .skills img {
+    width: 30px;
+  }
+  .skills {
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px;
+    gap: 10px;
+  }
+}
